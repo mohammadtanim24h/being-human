@@ -1,0 +1,24 @@
+.login-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.login-div h3 {
+    color: #3F90FC;
+}
+
+.theme-color {
+    color: #3F90FC;
+}
+
+.login-div button {
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 20px;
+}
