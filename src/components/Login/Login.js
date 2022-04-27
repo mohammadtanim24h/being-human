@@ -3,15 +3,18 @@ import "./Login.css";
 import google from "../../images/icons8-google.png";
 import auth from "../../firebase/firebase.init";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
-    const [signInWithGoogle, user, , error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
+    const [signInWithGoogle, user, , error] = useSignInWithGoogle(auth);
+    
 
     useEffect(() => {
         if (user) {
-            navigate("/");
+            navigate(from, { replace: true });
         }
     }, [user]);
 

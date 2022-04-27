@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Login from "./components/Login/Login";
 import AddActivity from "./components/AddActivity/AddActivity";
 import VolunteerRegister from "./components/VolunteerRegister/VolunteerRegister";
+import RequireAuth from "./components/RequireAuth/RequireAuth";
 
 function App() {
     return (
@@ -16,8 +17,18 @@ function App() {
                 <Route path="/" element={<Home></Home>}></Route>
                 <Route path="/about" element={<About></About>}></Route>
                 <Route path="/login" element={<Login></Login>}></Route>
-                <Route path="/addActivities" element={<AddActivity></AddActivity>}></Route>
-                <Route path="/volunteerRegister" element={<VolunteerRegister></VolunteerRegister>}></Route>
+                <Route
+                    path="/addActivities"
+                    element={<AddActivity></AddActivity>}
+                ></Route>
+                <Route
+                    path="/volunteerRegister"
+                    element={
+                        <RequireAuth>
+                            <VolunteerRegister></VolunteerRegister>
+                        </RequireAuth>
+                    }
+                ></Route>
             </Routes>
         </div>
     );
