@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Login from "./components/Login/Login";
 import AddActivity from "./components/AddActivity/AddActivity";
+import VolunteerRegister from "./components/VolunteerRegister/VolunteerRegister";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/about" element={<About></About>}></Route>
                 <Route path="/login" element={<Login></Login>}></Route>
                 <Route path="/addActivities" element={<AddActivity></AddActivity>}></Route>
+                <Route path="/volunteerRegister" element={<VolunteerRegister></VolunteerRegister>}></Route>
             </Routes>
         </div>
     );

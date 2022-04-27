@@ -51,7 +51,7 @@ const AddActivity = () => {
                         required
                     />
                     <input
-                        className="form-control mb-2"
+                        className="form-control mb-3"
                         placeholder="Image URL"
                         type="text"
                         {...register("img")}
