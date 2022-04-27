@@ -1,0 +1,12 @@
+.submit-btn {
+    background-color: #3F90FC;
+    color: #fff;
+    outline: 0;
+    border: 0;
+    padding: 10px 20px;
+    transition: all .2s ease-in-out;
+}
+
+.submit-btn:hover {
+    border-radius: 25px;
+}

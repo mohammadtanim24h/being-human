@@ -22,3 +22,16 @@
     border: 0;
     outline: 0;
 }
+
+.logout-btn {
+    height: 40px !important;
+    margin: 9px 0;
+}
+
+.nav-container a {
+    border-bottom: 2px solid #F8F9FA;
+}
+
+.nav-container a:hover:not(.exclude a){
+    border-bottom: 2px solid #3F90FC;
+}
