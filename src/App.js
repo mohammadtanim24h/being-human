@@ -8,6 +8,7 @@ import Login from "./components/Login/Login";
 import AddActivity from "./components/AddActivity/AddActivity";
 import VolunteerRegister from "./components/VolunteerRegister/VolunteerRegister";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
+import Donation from "./components/Donation/Donation";
 
 function App() {
     return (
@@ -26,6 +27,14 @@ function App() {
                     element={
                         <RequireAuth>
                             <VolunteerRegister></VolunteerRegister>
+                        </RequireAuth>
+                    }
+                ></Route>
+                <Route
+                    path="/donation"
+                    element={
+                        <RequireAuth>
+                            <Donation></Donation>
                         </RequireAuth>
                     }
                 ></Route>

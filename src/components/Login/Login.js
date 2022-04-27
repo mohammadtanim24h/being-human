@@ -28,7 +28,7 @@ const Login = () => {
                     <h3 className="text-center mb-2">Login</h3>
                     <button onClick={() => signInWithGoogle()}>
                         <img width={36} src={google} alt="" />
-                        Continue With Google
+                        <span className="ms-2">Continue With Google</span>
                     </button>
                     <p className="my-3">
                         Don't have an account?
