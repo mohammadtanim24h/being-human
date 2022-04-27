@@ -25,7 +25,7 @@ const Header = () => {
                             <Nav.Link as={Link} to="events">
                                 Events
                             </Nav.Link>
-                            <Nav.Link as={Link} to="addActivities">
+                            <Nav.Link className="me-2" as={Link} to="addActivities">
                                 Add Activities
                             </Nav.Link>
                         </Nav>
