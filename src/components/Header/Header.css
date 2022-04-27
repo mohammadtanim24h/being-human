@@ -1,0 +1,24 @@
+.login-btn {
+    background-color: #5DA3FA;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    border: 1px solid #5DA3FA;
+    outline: 0;
+    transition: .3s;
+}
+
+.login-btn:hover {
+    background-color: transparent;
+    color: #5DA3FA;
+}
+
+.admin-btn {
+    background-color: #434141;
+    border: 1px solid #434141;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    border: 0;
+    outline: 0;
+}

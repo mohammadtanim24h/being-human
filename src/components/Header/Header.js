@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import './Header.css';
 
 const Header = () => {
     return (
@@ -15,9 +16,11 @@ const Header = () => {
                             <Nav.Link as={Link} to="events">Events</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="login">Login</Nav.Link>
+                            <Nav.Link as={Link} to="login">
+                                <button className="login-btn">Login</button>
+                            </Nav.Link>
                             <Nav.Link eventKey={2} as={Link} to="admin">
-                                Admin
+                                <button className="admin-btn">Admin</button>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
