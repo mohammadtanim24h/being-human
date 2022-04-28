@@ -9,7 +9,7 @@ const VolunteerRegister = () => {
     const [user] = useAuthState(auth);
     const { register, handleSubmit } = useForm();
     const onSubmit = (data, e) => {
-        fetch("http://localhost:5000/volunteerInfo", {
+        fetch("https://obscure-island-44323.herokuapp.com/volunteerInfo", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

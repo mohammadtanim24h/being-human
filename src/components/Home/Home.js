@@ -4,7 +4,7 @@ import Activity from '../Activity/Activity';
 const Home = () => {
     const [activities, setActivities] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/activities")
+        fetch("https://obscure-island-44323.herokuapp.com/activities")
             .then(res => res.json())
             .then(data => setActivities(data))
     }, [])

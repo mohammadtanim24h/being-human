@@ -8,7 +8,7 @@ const Donation = () => {
     const email = user?.email;
     const [volunteer, setVolunteer] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/volunteerInfo?email=${email}`)
+        fetch(`https://obscure-island-44323.herokuapp.com/volunteerInfo?email=${email}`)
             .then((res) => res.json())
             .then((data) => setVolunteer(data));
     }, [email]);

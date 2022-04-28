@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 const AddActivity = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data, e) => {
-        fetch("http://localhost:5000/activity", {
+        fetch("https://obscure-island-44323.herokuapp.com/activity", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

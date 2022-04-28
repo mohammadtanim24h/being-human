@@ -17,7 +17,7 @@ const VolunteerInfo = ({ info, setVolunteer, volunteer }) => {
             confirmButtonText: "Yes, cancel it!",
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/volunteerInfo/${id}`, {
+                fetch(`https://obscure-island-44323.herokuapp.com/volunteerInfo/${id}`, {
                     method: "DELETE",
                 })
                     .then((res) => res.json())
